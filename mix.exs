@@ -3,9 +3,16 @@ defmodule TDS.Ecto.Mixfile do
 
   def project do
     [app: :tds_ecto,
+     source_url: "https://github.com/livehelpnow/tds_ecto",
      version: "0.1.5-dev",
      elixir: "~> 1.0",
      deps: deps(Mix.env)]
+  end
+
+  defp description do
+    """
+    MSSQL / TDS Adapter for Ecto.
+    """
   end
 
   # Configuration for the OTP application
